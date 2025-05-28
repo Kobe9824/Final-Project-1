@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #ffc8dd;
+  font-family: 'Ancizar Sans', Arial, sans-serif;
+  color: #fff;
+}
+
+.div-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+.div-wrapper > div {
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #4f0548;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.one {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.eight {
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: #3a0035;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #4f0548;
+}
+
+h2, h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Optional: Responsive tweaks */
+@media (max-width: 768px) {
+  .div-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
